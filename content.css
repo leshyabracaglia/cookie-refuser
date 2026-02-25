@@ -1,0 +1,7 @@
+/* Hide common cookie banner overlays immediately to reduce visual flicker */
+#onetrust-consent-sdk .onetrust-pc-dark-filter,
+#CybotCookiebotDialogBodyUnderlay,
+.qc-cmp2-container,
+.cmp-container-overlay {
+  transition: opacity 0.2s ease-out;
+}

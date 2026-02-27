@@ -1,6 +1,6 @@
 # Cookie Refuser
 
-A cross-browser extension that automatically denies all cookie consent banners. Works with Chrome, Firefox, Edge, and Safari.
+A cross-platform extension that automatically denies all cookie consent banners. Works with Chrome, Firefox, Edge, Safari, and Safari on iOS/iPadOS.
 
 ## Features
 
@@ -45,7 +45,7 @@ A cross-browser extension that automatically denies all cookie consent banners. 
 4. Click **Load unpacked**
 5. Select the cloned `Cookie-refuser` folder
 
-### Safari
+### Safari (macOS)
 
 1. Clone the repository and ensure you have Xcode installed
 2. Run Apple's converter from the terminal:
@@ -54,6 +54,25 @@ A cross-browser extension that automatically denies all cookie consent banners. 
    ```
 3. Open the generated Xcode project and build it
 4. Enable the extension in **Safari > Preferences > Extensions**
+
+### iOS / iPadOS
+
+Requires Xcode 14+ on macOS and an iOS 15+ or iPadOS 15+ device.
+
+1. Clone the repository:
+   ```
+   git clone https://github.com/leshyabracaglia/Cookie-refuser.git
+   ```
+2. Run the iOS build script:
+   ```
+   cd Cookie-refuser/ios
+   ./build.sh
+   ```
+3. Open the generated `CookieRefuser.xcodeproj` in Xcode
+4. Select your development team under **Signing & Capabilities** for both the app and extension targets
+5. Build and run on your device (or simulator)
+6. On your device, go to **Settings > Safari > Extensions** and enable **Cookie Refuser**
+7. When prompted, allow the extension for **All Websites** or select specific sites
 
 ## Usage
 
@@ -75,12 +94,13 @@ If the banner hasn't appeared yet, the script retries periodically and also obse
 
 ## Browser Compatibility
 
-| Browser | Minimum Version | Notes |
-|---------|----------------|-------|
-| Chrome  | 88+            | Full Manifest V3 support |
-| Firefox | 109+           | Manifest V3 with `browser_specific_settings` |
-| Edge    | 88+            | Chromium-based, same as Chrome |
-| Safari  | 15.4+          | Requires Xcode conversion |
+| Browser        | Minimum Version | Notes |
+|----------------|----------------|-------|
+| Chrome         | 88+            | Full Manifest V3 support |
+| Firefox        | 109+           | Manifest V3 with `browser_specific_settings` |
+| Edge           | 88+            | Chromium-based, same as Chrome |
+| Safari (macOS) | 15.4+          | Requires Xcode conversion |
+| Safari (iOS)   | 15+            | Via iOS Safari Web Extension |
 
 ## Project Structure
 
@@ -92,7 +112,18 @@ Cookie-refuser/
 ├── content.css     # Overlay transition styles
 ├── popup.html      # Popup UI
 ├── popup.js        # Popup logic (toggle + stats)
-└── icons/          # Extension icons (16, 48, 128px)
+├── icons/          # Extension icons (16, 48, 128px)
+└── ios/            # iOS Safari Web Extension
+    ├── build.sh                        # Build script
+    ├── CookieRefuser/                  # SwiftUI host app
+    │   ├── CookieRefuserApp.swift
+    │   ├── ContentView.swift
+    │   ├── Info.plist
+    │   └── Assets.xcassets/
+    └── CookieRefuser Extension/        # Safari Web Extension target
+        ├── SafariWebExtensionHandler.swift
+        ├── Info.plist
+        └── Resources/                  # Populated by build.sh
 ```
 
 ## License

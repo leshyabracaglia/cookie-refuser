@@ -1,6 +1,6 @@
 # Cookie Refuser
 
-A Chrome extension that automatically denies all cookie consent banners.
+A cross-browser extension that automatically denies all cookie consent banners. Works with Chrome, Firefox, Edge, and Safari.
 
 ## Features
 
@@ -9,9 +9,11 @@ A Chrome extension that automatically denies all cookie consent banners.
 - Multilingual support: English, German, French, Spanish, Italian, Dutch, Portuguese, Polish, and Swedish
 - Watches for late-loading banners using a MutationObserver
 - Popup UI with an enable/disable toggle and a counter of denied banners
-- Manifest V3 — works with the latest Chrome extension APIs
+- Manifest V3 — works with the latest browser extension APIs
 
 ## Installation
+
+### Chrome
 
 1. Clone the repository:
    ```
@@ -21,7 +23,37 @@ A Chrome extension that automatically denies all cookie consent banners.
 3. Enable **Developer mode** using the toggle in the top-right corner
 4. Click **Load unpacked**
 5. Select the cloned `Cookie-refuser` folder
-6. The extension icon will appear in your toolbar — you're ready to go
+
+### Firefox
+
+1. Clone the repository:
+   ```
+   git clone https://github.com/leshyabracaglia/Cookie-refuser.git
+   ```
+2. Open Firefox and navigate to `about:debugging#/runtime/this-firefox`
+3. Click **Load Temporary Add-on**
+4. Select the `manifest.json` file inside the cloned `Cookie-refuser` folder
+
+### Edge
+
+1. Clone the repository:
+   ```
+   git clone https://github.com/leshyabracaglia/Cookie-refuser.git
+   ```
+2. Open Edge and navigate to `edge://extensions/`
+3. Enable **Developer mode** using the toggle in the bottom-left corner
+4. Click **Load unpacked**
+5. Select the cloned `Cookie-refuser` folder
+
+### Safari
+
+1. Clone the repository and ensure you have Xcode installed
+2. Run Apple's converter from the terminal:
+   ```
+   xcrun safari-web-extension-converter /path/to/Cookie-refuser
+   ```
+3. Open the generated Xcode project and build it
+4. Enable the extension in **Safari > Preferences > Extensions**
 
 ## Usage
 
@@ -41,11 +73,20 @@ The content script uses a three-tier detection strategy:
 
 If the banner hasn't appeared yet, the script retries periodically and also observes DOM mutations to catch dynamically injected banners.
 
+## Browser Compatibility
+
+| Browser | Minimum Version | Notes |
+|---------|----------------|-------|
+| Chrome  | 88+            | Full Manifest V3 support |
+| Firefox | 109+           | Manifest V3 with `browser_specific_settings` |
+| Edge    | 88+            | Chromium-based, same as Chrome |
+| Safari  | 15.4+          | Requires Xcode conversion |
+
 ## Project Structure
 
 ```
 Cookie-refuser/
-├── manifest.json   # Extension manifest (V3)
+├── manifest.json   # Extension manifest (V3, cross-browser)
 ├── background.js   # Service worker — tracks denial stats
 ├── content.js      # Content script — detects and clicks deny buttons
 ├── content.css     # Overlay transition styles

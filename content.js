@@ -4,6 +4,8 @@
 (function () {
   "use strict";
 
+  const browserAPI = typeof browser !== "undefined" ? browser : chrome;
+
   // Patterns that match "deny/reject cookies" buttons across languages
   const DENY_BUTTON_PATTERNS = [
     // English
@@ -275,7 +277,7 @@
   }
 
   function notifyBackground(method) {
-    chrome.runtime.sendMessage({
+    browserAPI.runtime.sendMessage({
       type: "cookie-denied",
       url: window.location.hostname,
       method,
@@ -284,7 +286,7 @@
 
   // Check if extension is enabled before running
   function init() {
-    chrome.storage.local.get({ enabled: true }, (result) => {
+    browserAPI.storage.local.get({ enabled: true }).then((result) => {
       if (result.enabled) {
         // Small delay to let banners render
         setTimeout(dismissCookies, 500);

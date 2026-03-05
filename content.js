@@ -230,7 +230,7 @@
   // Broad DOM search as a fallback
   function tryBroadSearch() {
     const candidates = document.querySelectorAll(
-      'button, a, input[type="button"], input[type="submit"], [role="button"]'
+      'button, input[type="button"], input[type="submit"], [role="button"]'
     );
     const scored = [];
 
@@ -254,8 +254,12 @@
 
     if (scored.length === 0) return false;
 
-    // Click the highest-scored candidate
+    // Only click if the best candidate is clearly in a cookie/consent context.
+    // Max score without cookie context = 4 (1 base + 2 clickable + 1 short text),
+    // so requiring >= 5 prevents false positives on unrelated page elements.
     scored.sort((a, b) => b.score - a.score);
+    if (scored[0].score < 5) return false;
+
     scored[0].el.click();
     notifyBackground("broad-search");
     return true;

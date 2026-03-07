@@ -46,8 +46,7 @@ xcrun safari-web-extension-converter \
     "$RESOURCES_DIR" \
     --project-location "$SCRIPT_DIR" \
     --app-name "CookieRefuser" \
-    --bundle-identifier "com.cookierefuser.ios" \
-    --ios-only \
+    --bundle-identifier "com.cookierefuser.app" \
     --swift \
     --no-open \
     --force
@@ -57,6 +56,10 @@ echo "==> Build complete!"
 echo ""
 echo "Next steps:"
 echo "  1. Open CookieRefuser.xcodeproj in Xcode"
-echo "  2. Select your development team in Signing & Capabilities"
-echo "  3. Build and run on your device or simulator"
-echo "  4. Enable the extension in Settings > Safari > Extensions"
+echo "  2. Select your development team in Signing & Capabilities for all targets"
+echo "  3. Set the scheme to 'CookieRefuser (macOS)' and archive: Product > Archive"
+echo "  4. In the Organizer, click Distribute App > App Store Connect"
+echo "  5. Submit in App Store Connect at appstoreconnect.apple.com"
+echo ""
+echo "  For iOS: switch scheme to 'CookieRefuser (iOS)', archive and submit the same way"
+echo "  Enable on device: Settings > Safari > Extensions > Cookie Refuser"

@@ -1,0 +1,1001 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 77;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		EA205EEE2F5CCAF300D67136 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA205EED2F5CCAF300D67136 /* AppDelegate.swift */; };
+		EA205EF02F5CCAF300D67136 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA205EEF2F5CCAF300D67136 /* SceneDelegate.swift */; };
+		EA205EF32F5CCAF300D67136 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = EA205EF12F5CCAF300D67136 /* LaunchScreen.storyboard */; };
+		EA205EF62F5CCAF300D67136 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = EA205EF42F5CCAF300D67136 /* Main.storyboard */; };
+		EA205EFF2F5CCAF300D67136 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA205EFE2F5CCAF300D67136 /* AppDelegate.swift */; };
+		EA205F022F5CCAF300D67136 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = EA205F002F5CCAF300D67136 /* Main.storyboard */; };
+		EA205F092F5CCAF300D67136 /* CookieRefuser Extension.appex in Embed Foundation Extensions */ = {isa = PBXBuildFile; fileRef = EA205F082F5CCAF300D67136 /* CookieRefuser Extension.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
+		EA205F132F5CCAF300D67136 /* CookieRefuser Extension.appex in Embed Foundation Extensions */ = {isa = PBXBuildFile; fileRef = EA205F122F5CCAF300D67136 /* CookieRefuser Extension.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
+		EA205F182F5CCAF300D67136 /* Main.html in Resources */ = {isa = PBXBuildFile; fileRef = EA205EDD2F5CCAF200D67136 /* Main.html */; };
+		EA205F192F5CCAF300D67136 /* Main.html in Resources */ = {isa = PBXBuildFile; fileRef = EA205EDD2F5CCAF200D67136 /* Main.html */; };
+		EA205F1A2F5CCAF300D67136 /* Icon.png in Resources */ = {isa = PBXBuildFile; fileRef = EA205EDF2F5CCAF200D67136 /* Icon.png */; };
+		EA205F1B2F5CCAF300D67136 /* Icon.png in Resources */ = {isa = PBXBuildFile; fileRef = EA205EDF2F5CCAF200D67136 /* Icon.png */; };
+		EA205F1C2F5CCAF300D67136 /* Style.css in Resources */ = {isa = PBXBuildFile; fileRef = EA205EE02F5CCAF200D67136 /* Style.css */; };
+		EA205F1D2F5CCAF300D67136 /* Style.css in Resources */ = {isa = PBXBuildFile; fileRef = EA205EE02F5CCAF200D67136 /* Style.css */; };
+		EA205F1E2F5CCAF300D67136 /* Script.js in Resources */ = {isa = PBXBuildFile; fileRef = EA205EE12F5CCAF200D67136 /* Script.js */; };
+		EA205F1F2F5CCAF300D67136 /* Script.js in Resources */ = {isa = PBXBuildFile; fileRef = EA205EE12F5CCAF200D67136 /* Script.js */; };
+		EA205F202F5CCAF300D67136 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA205EE22F5CCAF200D67136 /* ViewController.swift */; };
+		EA205F212F5CCAF300D67136 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA205EE22F5CCAF200D67136 /* ViewController.swift */; };
+		EA205F222F5CCAF300D67136 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = EA205EE32F5CCAF300D67136 /* Assets.xcassets */; };
+		EA205F232F5CCAF300D67136 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = EA205EE32F5CCAF300D67136 /* Assets.xcassets */; };
+		EA205F242F5CCAF300D67136 /* SafariWebExtensionHandler.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA205EE52F5CCAF300D67136 /* SafariWebExtensionHandler.swift */; };
+		EA205F252F5CCAF300D67136 /* SafariWebExtensionHandler.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA205EE52F5CCAF300D67136 /* SafariWebExtensionHandler.swift */; };
+		EA205F3E2F5CCAF400D67136 /* popup.js in Resources */ = {isa = PBXBuildFile; fileRef = EA205F372F5CCAF400D67136 /* popup.js */; };
+		EA205F3F2F5CCAF400D67136 /* content.css in Resources */ = {isa = PBXBuildFile; fileRef = EA205F382F5CCAF400D67136 /* content.css */; };
+		EA205F402F5CCAF400D67136 /* background.js in Resources */ = {isa = PBXBuildFile; fileRef = EA205F392F5CCAF400D67136 /* background.js */; };
+		EA205F412F5CCAF400D67136 /* popup.html in Resources */ = {isa = PBXBuildFile; fileRef = EA205F3A2F5CCAF400D67136 /* popup.html */; };
+		EA205F422F5CCAF400D67136 /* icons in Resources */ = {isa = PBXBuildFile; fileRef = EA205F3B2F5CCAF400D67136 /* icons */; };
+		EA205F432F5CCAF400D67136 /* manifest.json in Resources */ = {isa = PBXBuildFile; fileRef = EA205F3C2F5CCAF400D67136 /* manifest.json */; };
+		EA205F442F5CCAF400D67136 /* content.js in Resources */ = {isa = PBXBuildFile; fileRef = EA205F3D2F5CCAF400D67136 /* content.js */; };
+		EA205F452F5CCAF400D67136 /* popup.js in Resources */ = {isa = PBXBuildFile; fileRef = EA205F372F5CCAF400D67136 /* popup.js */; };
+		EA205F462F5CCAF400D67136 /* content.css in Resources */ = {isa = PBXBuildFile; fileRef = EA205F382F5CCAF400D67136 /* content.css */; };
+		EA205F472F5CCAF400D67136 /* background.js in Resources */ = {isa = PBXBuildFile; fileRef = EA205F392F5CCAF400D67136 /* background.js */; };
+		EA205F482F5CCAF400D67136 /* popup.html in Resources */ = {isa = PBXBuildFile; fileRef = EA205F3A2F5CCAF400D67136 /* popup.html */; };
+		EA205F492F5CCAF400D67136 /* icons in Resources */ = {isa = PBXBuildFile; fileRef = EA205F3B2F5CCAF400D67136 /* icons */; };
+		EA205F4A2F5CCAF400D67136 /* manifest.json in Resources */ = {isa = PBXBuildFile; fileRef = EA205F3C2F5CCAF400D67136 /* manifest.json */; };
+		EA205F4B2F5CCAF400D67136 /* content.js in Resources */ = {isa = PBXBuildFile; fileRef = EA205F3D2F5CCAF400D67136 /* content.js */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		EA205F0A2F5CCAF300D67136 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = EA205ED72F5CCAF200D67136 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = EA205F072F5CCAF300D67136;
+			remoteInfo = "CookieRefuser Extension (iOS)";
+		};
+		EA205F142F5CCAF300D67136 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = EA205ED72F5CCAF200D67136 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = EA205F112F5CCAF300D67136;
+			remoteInfo = "CookieRefuser Extension (macOS)";
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		EA205F2B2F5CCAF300D67136 /* Embed Foundation Extensions */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 13;
+			files = (
+				EA205F092F5CCAF300D67136 /* CookieRefuser Extension.appex in Embed Foundation Extensions */,
+			);
+			name = "Embed Foundation Extensions";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		EA205F322F5CCAF300D67136 /* Embed Foundation Extensions */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 13;
+			files = (
+				EA205F132F5CCAF300D67136 /* CookieRefuser Extension.appex in Embed Foundation Extensions */,
+			);
+			name = "Embed Foundation Extensions";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
+/* Begin PBXFileReference section */
+		EA205EDE2F5CCAF200D67136 /* Base */ = {isa = PBXFileReference; lastKnownFileType = text.html; name = Base; path = Base.lproj/Main.html; sourceTree = "<group>"; };
+		EA205EDF2F5CCAF200D67136 /* Icon.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Icon.png; sourceTree = "<group>"; };
+		EA205EE02F5CCAF200D67136 /* Style.css */ = {isa = PBXFileReference; lastKnownFileType = text.css; path = Style.css; sourceTree = "<group>"; };
+		EA205EE12F5CCAF200D67136 /* Script.js */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.javascript; path = Script.js; sourceTree = "<group>"; };
+		EA205EE22F5CCAF200D67136 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		EA205EE32F5CCAF300D67136 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		EA205EE52F5CCAF300D67136 /* SafariWebExtensionHandler.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SafariWebExtensionHandler.swift; sourceTree = "<group>"; };
+		EA205EEA2F5CCAF300D67136 /* CookieRefuser.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = CookieRefuser.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		EA205EED2F5CCAF300D67136 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		EA205EEF2F5CCAF300D67136 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
+		EA205EF22F5CCAF300D67136 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		EA205EF52F5CCAF300D67136 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		EA205EF72F5CCAF300D67136 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		EA205EFC2F5CCAF300D67136 /* CookieRefuser.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = CookieRefuser.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		EA205EFE2F5CCAF300D67136 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		EA205F012F5CCAF300D67136 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		EA205F032F5CCAF300D67136 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		EA205F082F5CCAF300D67136 /* CookieRefuser Extension.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = "CookieRefuser Extension.appex"; sourceTree = BUILT_PRODUCTS_DIR; };
+		EA205F0D2F5CCAF300D67136 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		EA205F122F5CCAF300D67136 /* CookieRefuser Extension.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = "CookieRefuser Extension.appex"; sourceTree = BUILT_PRODUCTS_DIR; };
+		EA205F172F5CCAF300D67136 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		EA205F372F5CCAF400D67136 /* popup.js */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.javascript; name = popup.js; path = "../../CookieRefuser Extension/Resources/popup.js"; sourceTree = "<group>"; };
+		EA205F382F5CCAF400D67136 /* content.css */ = {isa = PBXFileReference; lastKnownFileType = text.css; name = content.css; path = "../../CookieRefuser Extension/Resources/content.css"; sourceTree = "<group>"; };
+		EA205F392F5CCAF400D67136 /* background.js */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.javascript; name = background.js; path = "../../CookieRefuser Extension/Resources/background.js"; sourceTree = "<group>"; };
+		EA205F3A2F5CCAF400D67136 /* popup.html */ = {isa = PBXFileReference; lastKnownFileType = text.html; name = popup.html; path = "../../CookieRefuser Extension/Resources/popup.html"; sourceTree = "<group>"; };
+		EA205F3B2F5CCAF400D67136 /* icons */ = {isa = PBXFileReference; lastKnownFileType = folder; name = icons; path = "../../CookieRefuser Extension/Resources/icons"; sourceTree = "<group>"; };
+		EA205F3C2F5CCAF400D67136 /* manifest.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; name = manifest.json; path = "../../CookieRefuser Extension/Resources/manifest.json"; sourceTree = "<group>"; };
+		EA205F3D2F5CCAF400D67136 /* content.js */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.javascript; name = content.js; path = "../../CookieRefuser Extension/Resources/content.js"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		EA205EE72F5CCAF300D67136 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		EA205EF92F5CCAF300D67136 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		EA205F052F5CCAF300D67136 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		EA205F0F2F5CCAF300D67136 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		EA205ED62F5CCAF200D67136 = {
+			isa = PBXGroup;
+			children = (
+				EA205EDB2F5CCAF200D67136 /* Shared (App) */,
+				EA205EE42F5CCAF300D67136 /* Shared (Extension) */,
+				EA205EEC2F5CCAF300D67136 /* iOS (App) */,
+				EA205EFD2F5CCAF300D67136 /* macOS (App) */,
+				EA205F0C2F5CCAF300D67136 /* iOS (Extension) */,
+				EA205F162F5CCAF300D67136 /* macOS (Extension) */,
+				EA205EEB2F5CCAF300D67136 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		EA205EDB2F5CCAF200D67136 /* Shared (App) */ = {
+			isa = PBXGroup;
+			children = (
+				EA205EE22F5CCAF200D67136 /* ViewController.swift */,
+				EA205EE32F5CCAF300D67136 /* Assets.xcassets */,
+				EA205EDC2F5CCAF200D67136 /* Resources */,
+			);
+			path = "Shared (App)";
+			sourceTree = "<group>";
+		};
+		EA205EDC2F5CCAF200D67136 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				EA205EDD2F5CCAF200D67136 /* Main.html */,
+				EA205EDF2F5CCAF200D67136 /* Icon.png */,
+				EA205EE02F5CCAF200D67136 /* Style.css */,
+				EA205EE12F5CCAF200D67136 /* Script.js */,
+			);
+			path = Resources;
+			sourceTree = "<group>";
+		};
+		EA205EE42F5CCAF300D67136 /* Shared (Extension) */ = {
+			isa = PBXGroup;
+			children = (
+				EA205F362F5CCAF400D67136 /* Resources */,
+				EA205EE52F5CCAF300D67136 /* SafariWebExtensionHandler.swift */,
+			);
+			path = "Shared (Extension)";
+			sourceTree = "<group>";
+		};
+		EA205EEB2F5CCAF300D67136 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				EA205EEA2F5CCAF300D67136 /* CookieRefuser.app */,
+				EA205EFC2F5CCAF300D67136 /* CookieRefuser.app */,
+				EA205F082F5CCAF300D67136 /* CookieRefuser Extension.appex */,
+				EA205F122F5CCAF300D67136 /* CookieRefuser Extension.appex */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		EA205EEC2F5CCAF300D67136 /* iOS (App) */ = {
+			isa = PBXGroup;
+			children = (
+				EA205EED2F5CCAF300D67136 /* AppDelegate.swift */,
+				EA205EEF2F5CCAF300D67136 /* SceneDelegate.swift */,
+				EA205EF12F5CCAF300D67136 /* LaunchScreen.storyboard */,
+				EA205EF42F5CCAF300D67136 /* Main.storyboard */,
+				EA205EF72F5CCAF300D67136 /* Info.plist */,
+			);
+			path = "iOS (App)";
+			sourceTree = "<group>";
+		};
+		EA205EFD2F5CCAF300D67136 /* macOS (App) */ = {
+			isa = PBXGroup;
+			children = (
+				EA205EFE2F5CCAF300D67136 /* AppDelegate.swift */,
+				EA205F002F5CCAF300D67136 /* Main.storyboard */,
+				EA205F032F5CCAF300D67136 /* Info.plist */,
+			);
+			path = "macOS (App)";
+			sourceTree = "<group>";
+		};
+		EA205F0C2F5CCAF300D67136 /* iOS (Extension) */ = {
+			isa = PBXGroup;
+			children = (
+				EA205F0D2F5CCAF300D67136 /* Info.plist */,
+			);
+			path = "iOS (Extension)";
+			sourceTree = "<group>";
+		};
+		EA205F162F5CCAF300D67136 /* macOS (Extension) */ = {
+			isa = PBXGroup;
+			children = (
+				EA205F172F5CCAF300D67136 /* Info.plist */,
+			);
+			path = "macOS (Extension)";
+			sourceTree = "<group>";
+		};
+		EA205F362F5CCAF400D67136 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				EA205F372F5CCAF400D67136 /* popup.js */,
+				EA205F382F5CCAF400D67136 /* content.css */,
+				EA205F392F5CCAF400D67136 /* background.js */,
+				EA205F3A2F5CCAF400D67136 /* popup.html */,
+				EA205F3B2F5CCAF400D67136 /* icons */,
+				EA205F3C2F5CCAF400D67136 /* manifest.json */,
+				EA205F3D2F5CCAF400D67136 /* content.js */,
+			);
+			name = Resources;
+			path = "Shared (Extension)";
+			sourceTree = SOURCE_ROOT;
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		EA205EE92F5CCAF300D67136 /* CookieRefuser (iOS) */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = EA205F2C2F5CCAF300D67136 /* Build configuration list for PBXNativeTarget "CookieRefuser (iOS)" */;
+			buildPhases = (
+				EA205EE62F5CCAF300D67136 /* Sources */,
+				EA205EE72F5CCAF300D67136 /* Frameworks */,
+				EA205EE82F5CCAF300D67136 /* Resources */,
+				EA205F2B2F5CCAF300D67136 /* Embed Foundation Extensions */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				EA205F0B2F5CCAF300D67136 /* PBXTargetDependency */,
+			);
+			name = "CookieRefuser (iOS)";
+			packageProductDependencies = (
+			);
+			productName = "CookieRefuser (iOS)";
+			productReference = EA205EEA2F5CCAF300D67136 /* CookieRefuser.app */;
+			productType = "com.apple.product-type.application";
+		};
+		EA205EFB2F5CCAF300D67136 /* CookieRefuser (macOS) */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = EA205F332F5CCAF300D67136 /* Build configuration list for PBXNativeTarget "CookieRefuser (macOS)" */;
+			buildPhases = (
+				EA205EF82F5CCAF300D67136 /* Sources */,
+				EA205EF92F5CCAF300D67136 /* Frameworks */,
+				EA205EFA2F5CCAF300D67136 /* Resources */,
+				EA205F322F5CCAF300D67136 /* Embed Foundation Extensions */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				EA205F152F5CCAF300D67136 /* PBXTargetDependency */,
+			);
+			name = "CookieRefuser (macOS)";
+			packageProductDependencies = (
+			);
+			productName = "CookieRefuser (macOS)";
+			productReference = EA205EFC2F5CCAF300D67136 /* CookieRefuser.app */;
+			productType = "com.apple.product-type.application";
+		};
+		EA205F072F5CCAF300D67136 /* CookieRefuser Extension (iOS) */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = EA205F282F5CCAF300D67136 /* Build configuration list for PBXNativeTarget "CookieRefuser Extension (iOS)" */;
+			buildPhases = (
+				EA205F042F5CCAF300D67136 /* Sources */,
+				EA205F052F5CCAF300D67136 /* Frameworks */,
+				EA205F062F5CCAF300D67136 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "CookieRefuser Extension (iOS)";
+			packageProductDependencies = (
+			);
+			productName = "CookieRefuser Extension (iOS)";
+			productReference = EA205F082F5CCAF300D67136 /* CookieRefuser Extension.appex */;
+			productType = "com.apple.product-type.app-extension";
+		};
+		EA205F112F5CCAF300D67136 /* CookieRefuser Extension (macOS) */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = EA205F2F2F5CCAF300D67136 /* Build configuration list for PBXNativeTarget "CookieRefuser Extension (macOS)" */;
+			buildPhases = (
+				EA205F0E2F5CCAF300D67136 /* Sources */,
+				EA205F0F2F5CCAF300D67136 /* Frameworks */,
+				EA205F102F5CCAF300D67136 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "CookieRefuser Extension (macOS)";
+			packageProductDependencies = (
+			);
+			productName = "CookieRefuser Extension (macOS)";
+			productReference = EA205F122F5CCAF300D67136 /* CookieRefuser Extension.appex */;
+			productType = "com.apple.product-type.app-extension";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		EA205ED72F5CCAF200D67136 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = 1;
+				LastSwiftUpdateCheck = 2620;
+				LastUpgradeCheck = 2620;
+				TargetAttributes = {
+					EA205EE92F5CCAF300D67136 = {
+						CreatedOnToolsVersion = 26.2;
+					};
+					EA205EFB2F5CCAF300D67136 = {
+						CreatedOnToolsVersion = 26.2;
+					};
+					EA205F072F5CCAF300D67136 = {
+						CreatedOnToolsVersion = 26.2;
+					};
+					EA205F112F5CCAF300D67136 = {
+						CreatedOnToolsVersion = 26.2;
+					};
+				};
+			};
+			buildConfigurationList = EA205EDA2F5CCAF200D67136 /* Build configuration list for PBXProject "CookieRefuser" */;
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = EA205ED62F5CCAF200D67136;
+			minimizedProjectReferenceProxies = 1;
+			preferredProjectObjectVersion = 77;
+			productRefGroup = EA205EEB2F5CCAF300D67136 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				EA205EE92F5CCAF300D67136 /* CookieRefuser (iOS) */,
+				EA205EFB2F5CCAF300D67136 /* CookieRefuser (macOS) */,
+				EA205F072F5CCAF300D67136 /* CookieRefuser Extension (iOS) */,
+				EA205F112F5CCAF300D67136 /* CookieRefuser Extension (macOS) */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		EA205EE82F5CCAF300D67136 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				EA205F1A2F5CCAF300D67136 /* Icon.png in Resources */,
+				EA205EF32F5CCAF300D67136 /* LaunchScreen.storyboard in Resources */,
+				EA205F182F5CCAF300D67136 /* Main.html in Resources */,
+				EA205F1E2F5CCAF300D67136 /* Script.js in Resources */,
+				EA205F222F5CCAF300D67136 /* Assets.xcassets in Resources */,
+				EA205EF62F5CCAF300D67136 /* Main.storyboard in Resources */,
+				EA205F1C2F5CCAF300D67136 /* Style.css in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		EA205EFA2F5CCAF300D67136 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				EA205F1B2F5CCAF300D67136 /* Icon.png in Resources */,
+				EA205F1D2F5CCAF300D67136 /* Style.css in Resources */,
+				EA205F022F5CCAF300D67136 /* Main.storyboard in Resources */,
+				EA205F1F2F5CCAF300D67136 /* Script.js in Resources */,
+				EA205F232F5CCAF300D67136 /* Assets.xcassets in Resources */,
+				EA205F192F5CCAF300D67136 /* Main.html in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		EA205F062F5CCAF300D67136 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				EA205F452F5CCAF400D67136 /* popup.js in Resources */,
+				EA205F482F5CCAF400D67136 /* popup.html in Resources */,
+				EA205F472F5CCAF400D67136 /* background.js in Resources */,
+				EA205F492F5CCAF400D67136 /* icons in Resources */,
+				EA205F4A2F5CCAF400D67136 /* manifest.json in Resources */,
+				EA205F4B2F5CCAF400D67136 /* content.js in Resources */,
+				EA205F462F5CCAF400D67136 /* content.css in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		EA205F102F5CCAF300D67136 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				EA205F3E2F5CCAF400D67136 /* popup.js in Resources */,
+				EA205F412F5CCAF400D67136 /* popup.html in Resources */,
+				EA205F402F5CCAF400D67136 /* background.js in Resources */,
+				EA205F422F5CCAF400D67136 /* icons in Resources */,
+				EA205F432F5CCAF400D67136 /* manifest.json in Resources */,
+				EA205F442F5CCAF400D67136 /* content.js in Resources */,
+				EA205F3F2F5CCAF400D67136 /* content.css in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		EA205EE62F5CCAF300D67136 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				EA205F202F5CCAF300D67136 /* ViewController.swift in Sources */,
+				EA205EEE2F5CCAF300D67136 /* AppDelegate.swift in Sources */,
+				EA205EF02F5CCAF300D67136 /* SceneDelegate.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		EA205EF82F5CCAF300D67136 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				EA205F212F5CCAF300D67136 /* ViewController.swift in Sources */,
+				EA205EFF2F5CCAF300D67136 /* AppDelegate.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		EA205F042F5CCAF300D67136 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				EA205F242F5CCAF300D67136 /* SafariWebExtensionHandler.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		EA205F0E2F5CCAF300D67136 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				EA205F252F5CCAF300D67136 /* SafariWebExtensionHandler.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		EA205F0B2F5CCAF300D67136 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = EA205F072F5CCAF300D67136 /* CookieRefuser Extension (iOS) */;
+			targetProxy = EA205F0A2F5CCAF300D67136 /* PBXContainerItemProxy */;
+		};
+		EA205F152F5CCAF300D67136 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = EA205F112F5CCAF300D67136 /* CookieRefuser Extension (macOS) */;
+			targetProxy = EA205F142F5CCAF300D67136 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		EA205EDD2F5CCAF200D67136 /* Main.html */ = {
+			isa = PBXVariantGroup;
+			children = (
+				EA205EDE2F5CCAF200D67136 /* Base */,
+			);
+			name = Main.html;
+			sourceTree = "<group>";
+		};
+		EA205EF12F5CCAF300D67136 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				EA205EF22F5CCAF300D67136 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+		EA205EF42F5CCAF300D67136 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				EA205EF52F5CCAF300D67136 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		EA205F002F5CCAF300D67136 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				EA205F012F5CCAF300D67136 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		EA205F262F5CCAF300D67136 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu17;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "DEBUG $(inherited)";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		EA205F272F5CCAF300D67136 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu17;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SWIFT_COMPILATION_MODE = wholemodule;
+			};
+			name = Release;
+		};
+		EA205F292F5CCAF300D67136 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = "iOS (Extension)/Info.plist";
+				INFOPLIST_KEY_CFBundleDisplayName = "CookieRefuser Extension";
+				INFOPLIST_KEY_NSHumanReadableCopyright = "";
+				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@executable_path/../../Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				OTHER_LDFLAGS = (
+					"-framework",
+					SafariServices,
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.cookierefuser.app.Extension;
+				PRODUCT_NAME = "CookieRefuser Extension";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				STRING_CATALOG_GENERATE_SYMBOLS = YES;
+				SWIFT_APPROACHABLE_CONCURRENCY = YES;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_UPCOMING_FEATURE_MEMBER_IMPORT_VISIBILITY = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		EA205F2A2F5CCAF300D67136 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = "iOS (Extension)/Info.plist";
+				INFOPLIST_KEY_CFBundleDisplayName = "CookieRefuser Extension";
+				INFOPLIST_KEY_NSHumanReadableCopyright = "";
+				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@executable_path/../../Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				OTHER_LDFLAGS = (
+					"-framework",
+					SafariServices,
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.cookierefuser.app.Extension;
+				PRODUCT_NAME = "CookieRefuser Extension";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				STRING_CATALOG_GENERATE_SYMBOLS = YES;
+				SWIFT_APPROACHABLE_CONCURRENCY = YES;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_UPCOMING_FEATURE_MEMBER_IMPORT_VISIBILITY = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		EA205F2D2F5CCAF300D67136 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 9LZ7QMY9U2;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = "iOS (App)/Info.plist";
+				INFOPLIST_KEY_CFBundleDisplayName = CookieRefuser;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
+				INFOPLIST_KEY_UIMainStoryboardFile = Main;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				OTHER_LDFLAGS = (
+					"-framework",
+					SafariServices,
+					"-framework",
+					WebKit,
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.cookierefuser.app;
+				PRODUCT_NAME = CookieRefuser;
+				SDKROOT = iphoneos;
+				STRING_CATALOG_GENERATE_SYMBOLS = YES;
+				SWIFT_APPROACHABLE_CONCURRENCY = YES;
+				SWIFT_DEFAULT_ACTOR_ISOLATION = MainActor;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_UPCOMING_FEATURE_MEMBER_IMPORT_VISIBILITY = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		EA205F2E2F5CCAF300D67136 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 9LZ7QMY9U2;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = "iOS (App)/Info.plist";
+				INFOPLIST_KEY_CFBundleDisplayName = CookieRefuser;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
+				INFOPLIST_KEY_UIMainStoryboardFile = Main;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				OTHER_LDFLAGS = (
+					"-framework",
+					SafariServices,
+					"-framework",
+					WebKit,
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.cookierefuser.app;
+				PRODUCT_NAME = CookieRefuser;
+				SDKROOT = iphoneos;
+				STRING_CATALOG_GENERATE_SYMBOLS = YES;
+				SWIFT_APPROACHABLE_CONCURRENCY = YES;
+				SWIFT_DEFAULT_ACTOR_ISOLATION = MainActor;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_UPCOMING_FEATURE_MEMBER_IMPORT_VISIBILITY = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		EA205F302F5CCAF300D67136 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				ENABLE_APP_SANDBOX = YES;
+				ENABLE_HARDENED_RUNTIME = YES;
+				ENABLE_USER_SELECTED_FILES = readonly;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = "macOS (Extension)/Info.plist";
+				INFOPLIST_KEY_CFBundleDisplayName = "CookieRefuser Extension";
+				INFOPLIST_KEY_NSHumanReadableCopyright = "";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+					"@executable_path/../../../../Frameworks",
+				);
+				MACOSX_DEPLOYMENT_TARGET = 10.14;
+				MARKETING_VERSION = 1.0;
+				OTHER_LDFLAGS = (
+					"-framework",
+					SafariServices,
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.cookierefuser.app.Extension;
+				PRODUCT_NAME = "CookieRefuser Extension";
+				SDKROOT = macosx;
+				SKIP_INSTALL = YES;
+				STRING_CATALOG_GENERATE_SYMBOLS = YES;
+				SWIFT_APPROACHABLE_CONCURRENCY = YES;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_UPCOMING_FEATURE_MEMBER_IMPORT_VISIBILITY = YES;
+				SWIFT_VERSION = 5.0;
+			};
+			name = Debug;
+		};
+		EA205F312F5CCAF300D67136 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				ENABLE_APP_SANDBOX = YES;
+				ENABLE_HARDENED_RUNTIME = YES;
+				ENABLE_USER_SELECTED_FILES = readonly;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = "macOS (Extension)/Info.plist";
+				INFOPLIST_KEY_CFBundleDisplayName = "CookieRefuser Extension";
+				INFOPLIST_KEY_NSHumanReadableCopyright = "";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+					"@executable_path/../../../../Frameworks",
+				);
+				MACOSX_DEPLOYMENT_TARGET = 10.14;
+				MARKETING_VERSION = 1.0;
+				OTHER_LDFLAGS = (
+					"-framework",
+					SafariServices,
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.cookierefuser.app.Extension;
+				PRODUCT_NAME = "CookieRefuser Extension";
+				SDKROOT = macosx;
+				SKIP_INSTALL = YES;
+				STRING_CATALOG_GENERATE_SYMBOLS = YES;
+				SWIFT_APPROACHABLE_CONCURRENCY = YES;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_UPCOMING_FEATURE_MEMBER_IMPORT_VISIBILITY = YES;
+				SWIFT_VERSION = 5.0;
+			};
+			name = Release;
+		};
+		EA205F342F5CCAF300D67136 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				ENABLE_APP_SANDBOX = YES;
+				ENABLE_HARDENED_RUNTIME = YES;
+				ENABLE_OUTGOING_NETWORK_CONNECTIONS = YES;
+				ENABLE_USER_SELECTED_FILES = readonly;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = "macOS (App)/Info.plist";
+				INFOPLIST_KEY_CFBundleDisplayName = CookieRefuser;
+				INFOPLIST_KEY_NSMainStoryboardFile = Main;
+				INFOPLIST_KEY_NSPrincipalClass = NSApplication;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+				);
+				MACOSX_DEPLOYMENT_TARGET = 10.14;
+				MARKETING_VERSION = 1.0;
+				OTHER_LDFLAGS = (
+					"-framework",
+					SafariServices,
+					"-framework",
+					WebKit,
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.cookierefuser.app;
+				PRODUCT_NAME = CookieRefuser;
+				REGISTER_APP_GROUPS = YES;
+				SDKROOT = macosx;
+				STRING_CATALOG_GENERATE_SYMBOLS = YES;
+				SWIFT_APPROACHABLE_CONCURRENCY = YES;
+				SWIFT_DEFAULT_ACTOR_ISOLATION = MainActor;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_UPCOMING_FEATURE_MEMBER_IMPORT_VISIBILITY = YES;
+				SWIFT_VERSION = 5.0;
+			};
+			name = Debug;
+		};
+		EA205F352F5CCAF300D67136 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				ENABLE_APP_SANDBOX = YES;
+				ENABLE_HARDENED_RUNTIME = YES;
+				ENABLE_OUTGOING_NETWORK_CONNECTIONS = YES;
+				ENABLE_USER_SELECTED_FILES = readonly;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = "macOS (App)/Info.plist";
+				INFOPLIST_KEY_CFBundleDisplayName = CookieRefuser;
+				INFOPLIST_KEY_NSMainStoryboardFile = Main;
+				INFOPLIST_KEY_NSPrincipalClass = NSApplication;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+				);
+				MACOSX_DEPLOYMENT_TARGET = 10.14;
+				MARKETING_VERSION = 1.0;
+				OTHER_LDFLAGS = (
+					"-framework",
+					SafariServices,
+					"-framework",
+					WebKit,
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.cookierefuser.app;
+				PRODUCT_NAME = CookieRefuser;
+				REGISTER_APP_GROUPS = YES;
+				SDKROOT = macosx;
+				STRING_CATALOG_GENERATE_SYMBOLS = YES;
+				SWIFT_APPROACHABLE_CONCURRENCY = YES;
+				SWIFT_DEFAULT_ACTOR_ISOLATION = MainActor;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_UPCOMING_FEATURE_MEMBER_IMPORT_VISIBILITY = YES;
+				SWIFT_VERSION = 5.0;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		EA205EDA2F5CCAF200D67136 /* Build configuration list for PBXProject "CookieRefuser" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				EA205F262F5CCAF300D67136 /* Debug */,
+				EA205F272F5CCAF300D67136 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		EA205F282F5CCAF300D67136 /* Build configuration list for PBXNativeTarget "CookieRefuser Extension (iOS)" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				EA205F292F5CCAF300D67136 /* Debug */,
+				EA205F2A2F5CCAF300D67136 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		EA205F2C2F5CCAF300D67136 /* Build configuration list for PBXNativeTarget "CookieRefuser (iOS)" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				EA205F2D2F5CCAF300D67136 /* Debug */,
+				EA205F2E2F5CCAF300D67136 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		EA205F2F2F5CCAF300D67136 /* Build configuration list for PBXNativeTarget "CookieRefuser Extension (macOS)" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				EA205F302F5CCAF300D67136 /* Debug */,
+				EA205F312F5CCAF300D67136 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		EA205F332F5CCAF300D67136 /* Build configuration list for PBXNativeTarget "CookieRefuser (macOS)" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				EA205F342F5CCAF300D67136 /* Debug */,
+				EA205F352F5CCAF300D67136 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = EA205ED72F5CCAF200D67136 /* Project object */;
+}

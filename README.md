@@ -1,6 +1,6 @@
 # Cookie Refuser
 
-A cross-platform extension that automatically denies all cookie consent banners. Works with Chrome, Firefox, Edge, Safari, and Safari on iOS/iPadOS.
+A cross-platform extension that automatically denies all cookie consent banners. Works with Chrome, Firefox, Safari, and Safari on iOS/iPadOS.
 
 ## Features
 
@@ -26,6 +26,8 @@ A cross-platform extension that automatically denies all cookie consent banners.
 
 ### Firefox
 
+Cookie Refuser is available on the [Firefox Add-ons marketplace](https://addons.mozilla.org/en-US/firefox/addon/cookies-refuser/) — the easiest way to install it. You can also install it manually for free:
+
 1. Clone the repository:
    ```
    git clone https://github.com/leshyabracaglia/Cookie-refuser.git
@@ -33,17 +35,6 @@ A cross-platform extension that automatically denies all cookie consent banners.
 2. Open Firefox and navigate to `about:debugging#/runtime/this-firefox`
 3. Click **Load Temporary Add-on**
 4. Select the `manifest.json` file inside the cloned `Cookie-refuser` folder
-
-### Edge
-
-1. Clone the repository:
-   ```
-   git clone https://github.com/leshyabracaglia/Cookie-refuser.git
-   ```
-2. Open Edge and navigate to `edge://extensions/`
-3. Enable **Developer mode** using the toggle in the bottom-left corner
-4. Click **Load unpacked**
-5. Select the cloned `Cookie-refuser` folder
 
 ### Safari (macOS)
 
@@ -98,7 +89,6 @@ If the banner hasn't appeared yet, the script retries periodically and also obse
 |----------------|----------------|-------|
 | Chrome         | 88+            | Full Manifest V3 support |
 | Firefox        | 109+           | Manifest V3 with `browser_specific_settings` |
-| Edge           | 88+            | Chromium-based, same as Chrome |
 | Safari (macOS) | 15.4+          | Requires Xcode conversion |
 | Safari (iOS)   | 15+            | Via iOS Safari Web Extension |
 

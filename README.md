@@ -38,6 +38,8 @@ Cookie Refuser is available on the [Firefox Add-ons marketplace](https://addons.
 
 ### Safari (macOS)
 
+Cookie Refuser is available on the [Mac App Store](https://apps.apple.com/us/app/cookie-refuser/id6760318624?mt=12) — the easiest way to install it for Safari. You can also build it manually:
+
 1. Clone the repository and ensure you have Xcode installed
 2. Run Apple's converter from the terminal:
    ```

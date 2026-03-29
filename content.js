@@ -256,9 +256,10 @@
 
     // Only click if the best candidate is clearly in a cookie/consent context.
     // Max score without cookie context = 4 (1 base + 2 clickable + 1 short text),
-    // so requiring >= 5 prevents false positives on unrelated page elements.
+    // so requiring >= MIN_BROAD_SEARCH_SCORE prevents false positives on unrelated page elements.
+    const MIN_BROAD_SEARCH_SCORE = 5;
     scored.sort((a, b) => b.score - a.score);
-    if (scored[0].score < 5) return false;
+    if (scored[0].score < MIN_BROAD_SEARCH_SCORE) return false;
 
     scored[0].el.click();
     notifyBackground("broad-search");
@@ -280,7 +281,46 @@
     }
   }
 
+  function showByeToast() {
+    const toast = document.createElement("div");
+    toast.textContent = "bye! 👋";
+    Object.assign(toast.style, {
+      position: "fixed",
+      bottom: "24px",
+      right: "24px",
+      background: "#e94560",
+      color: "#fff",
+      fontFamily: "-apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif",
+      fontSize: "13px",
+      fontWeight: "600",
+      padding: "7px 14px",
+      borderRadius: "20px",
+      zIndex: "2147483647",
+      opacity: "0",
+      transform: "translateY(6px)",
+      transition: "opacity 0.2s, transform 0.2s",
+      pointerEvents: "none",
+      boxShadow: "0 4px 20px rgba(233,69,96,0.45)",
+      letterSpacing: "0.2px",
+    });
+    document.body.appendChild(toast);
+
+    // Animate in
+    requestAnimationFrame(() => requestAnimationFrame(() => {
+      toast.style.opacity = "1";
+      toast.style.transform = "translateY(0)";
+    }));
+
+    // Animate out and remove
+    setTimeout(() => {
+      toast.style.opacity = "0";
+      toast.style.transform = "translateY(6px)";
+      setTimeout(() => toast.remove(), 250);
+    }, 1800);
+  }
+
   function notifyBackground(method) {
+    showByeToast();
     browserAPI.runtime.sendMessage({
       type: "cookie-denied",
       url: window.location.hostname,
@@ -307,8 +347,10 @@
           subtree: true,
         });
 
-        // Stop observing after a reasonable time
-        setTimeout(() => observer.disconnect(), 15000);
+        // Stop observing after a reasonable time or when page unloads
+        const disconnectObserver = () => observer.disconnect();
+        setTimeout(disconnectObserver, 15000);
+        window.addEventListener("beforeunload", disconnectObserver, { once: true });
       }
     });
   }

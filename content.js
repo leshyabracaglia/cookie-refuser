@@ -230,7 +230,7 @@
   // Broad DOM search as a fallback
   function tryBroadSearch() {
     const candidates = document.querySelectorAll(
-      'button, input[type="button"], input[type="submit"], [role="button"]'
+      'button, a, input[type="button"], input[type="submit"], [role="button"]'
     );
     const scored = [];
 
@@ -281,28 +281,43 @@
     }
   }
 
-  function showByeToast() {
+  function showByeToast(method) {
     const toast = document.createElement("div");
-    toast.textContent = "bye! 👋";
     Object.assign(toast.style, {
       position: "fixed",
-      bottom: "24px",
+      top: "24px",
       right: "24px",
       background: "#e94560",
       color: "#fff",
       fontFamily: "-apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif",
-      fontSize: "13px",
-      fontWeight: "600",
-      padding: "7px 14px",
-      borderRadius: "20px",
+      padding: "9px 16px",
+      borderRadius: "10px",
       zIndex: "2147483647",
       opacity: "0",
-      transform: "translateY(6px)",
+      transform: "translateY(-6px)",
       transition: "opacity 0.2s, transform 0.2s",
       pointerEvents: "none",
       boxShadow: "0 4px 20px rgba(233,69,96,0.45)",
+    });
+
+    const title = document.createElement("div");
+    title.textContent = "Cookies refused \u2713";
+    Object.assign(title.style, {
+      fontSize: "13px",
+      fontWeight: "600",
       letterSpacing: "0.2px",
     });
+
+    const subtitle = document.createElement("div");
+    subtitle.textContent = "Cookie banner automatically blocked";
+    Object.assign(subtitle.style, {
+      fontSize: "11px",
+      opacity: "0.8",
+      marginTop: "2px",
+    });
+
+    toast.appendChild(title);
+    toast.appendChild(subtitle);
     document.body.appendChild(toast);
 
     // Animate in
@@ -314,13 +329,13 @@
     // Animate out and remove
     setTimeout(() => {
       toast.style.opacity = "0";
-      toast.style.transform = "translateY(6px)";
+      toast.style.transform = "translateY(-6px)";
       setTimeout(() => toast.remove(), 250);
     }, 1800);
   }
 
   function notifyBackground(method) {
-    showByeToast();
+    showByeToast(method);
     browserAPI.runtime.sendMessage({
       type: "cookie-denied",
       url: window.location.hostname,
@@ -340,6 +355,7 @@
         const observer = new MutationObserver(() => {
           if (handled) return;
           clearTimeout(debounceTimer);
+          attempts = 0; // Reset so retry loop can run fresh on new DOM changes
           debounceTimer = setTimeout(dismissCookies, 100);
         });
         observer.observe(document.body || document.documentElement, {
@@ -352,6 +368,14 @@
         setTimeout(disconnectObserver, 15000);
         window.addEventListener("beforeunload", disconnectObserver, { once: true });
       }
+
+      // Re-run if extension is enabled while the page is already open
+      browserAPI.storage.onChanged.addListener((changes, area) => {
+        if (area === "local" && changes.enabled && changes.enabled.newValue === true && !handled) {
+          attempts = 0;
+          dismissCookies();
+        }
+      });
     });
   }
 

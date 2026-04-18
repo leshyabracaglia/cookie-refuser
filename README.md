@@ -15,6 +15,8 @@ A cross-platform extension that automatically denies all cookie consent banners.
 
 ### Chrome
 
+Cookie Refuser is available on the [Chrome Web Store](https://chromewebstore.google.com/detail/cookie-refuser/mcglfjkmfeliffphgmihihlgehcfbkmi) — the easiest way to install it. You can also install it manually for free:
+
 1. Clone the repository:
    ```
    git clone https://github.com/leshyabracaglia/Cookie-refuser.git

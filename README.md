@@ -120,6 +120,28 @@ Cookie-refuser/
         └── Resources/                  # Populated by build.sh
 ```
 
+## Building
+
+Install dependencies first:
+```
+npm install
+```
+
+Then build the extension packages:
+
+```
+# Build both Chrome and Firefox zips
+npm run build
+
+# Build Chrome only
+npm run build:chrome
+
+# Build Firefox only
+npm run build:firefox
+```
+
+This generates `cookie-refuser-chrome.zip` and `cookie-refuser-firefox.zip` in the project root, ready to upload to the Chrome Web Store and Firefox Add-ons marketplace respectively.
+
 ## License
 
 MIT

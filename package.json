@@ -3,7 +3,10 @@
   "version": "1.1.0",
   "private": true,
   "scripts": {
-    "test": "jest"
+    "test": "jest",
+    "build:chrome": "zip -r cookie-refuser-chrome.zip manifest.json background.js content.js content.css popup.html popup.js icons/ --exclude '*.DS_Store'",
+    "build:firefox": "zip -r cookie-refuser-firefox.zip manifest.json background.js content.js content.css popup.html popup.js icons/ --exclude '*.DS_Store'",
+    "build": "npm run build:chrome && npm run build:firefox"
   },
   "devDependencies": {
     "jest": "^29.7.0",

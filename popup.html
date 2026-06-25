@@ -99,7 +99,48 @@
       color: #999;
       margin-top: 2px;
     }
-  </style>
+    .rating {
+      display: none;
+      background: #16213e;
+      padding: 12px 14px;
+      border-radius: 8px;
+      margin-top: 14px;
+    }
+    .rating.visible {
+      display: block;
+    }
+    .rating p {
+      font-size: 13px;
+      line-height: 1.4;
+      margin-bottom: 10px;
+    }
+    .rating-actions {
+      display: flex;
+      gap: 6px;
+    }
+    .rating-actions button {
+      flex: 1;
+      font: inherit;
+      font-size: 12px;
+      padding: 7px 8px;
+      border: none;
+      border-radius: 6px;
+      cursor: pointer;
+      background: #2a3a5e;
+      color: #e0e0e0;
+      transition: background 0.15s;
+    }
+    .rating-actions button:hover {
+      background: #354a73;
+    }
+    .rating-actions button.primary {
+      background: #e94560;
+      color: #fff;
+    }
+    .rating-actions button.primary:hover {
+      background: #f25670;
+    }
+</style>
 </head>
 <body>
   <div class="header">
@@ -119,6 +160,15 @@
     <h2>Banners blocked</h2>
     <div class="stat-number" id="total">0</div>
     <div class="stat-label">cookie popups denied</div>
+  </div>
+
+  <div class="rating" id="rating" role="region" aria-label="Rate Cookie Refuser">
+    <p>Enjoying Cookie Refuser? A quick rating helps others find it.</p>
+    <div class="rating-actions">
+      <button type="button" class="primary" id="rating-rate">Rate it</button>
+      <button type="button" id="rating-later">Later</button>
+      <button type="button" id="rating-dismiss">No thanks</button>
+    </div>
   </div>
 
   <script src="popup.js"></script>

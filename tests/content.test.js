@@ -21,6 +21,7 @@ function makeBrowserMock({ enabled = true } = {}) {
         get: jest.fn().mockResolvedValue({ enabled }),
         set: jest.fn().mockResolvedValue(undefined),
       },
+      onChanged: { addListener: jest.fn() },
     },
     runtime: {
       sendMessage: jest.fn().mockResolvedValue(undefined),
